@@ -2,6 +2,7 @@
 import { ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
 import screen from '../assets/screen.png'
+import porfolio from '../assets/porfolio.png'
 
 
 function Projects() {
@@ -13,6 +14,15 @@ function Projects() {
     tech: ["React", "Tailwind CSS", "Vercel"], 
     live: "https://real-estate-cc8l.vercel.app", // added https://
     github: "https://github.com/ogbuifesinachi21-ch/real-estate",
+  },
+  {
+    title: "Portfolio Website", // <-- YOUR PORTFOLIO SITE
+    description: "My personal portfolio website built to showcase my skills, projects, and experience. Fully responsive with dark teal theme and smooth animations.",
+    image: porfolio, // screenshot of your portfolio
+    tech: ["React", "Tailwind CSS", "Vercel"],
+    live: "https://porfolio-three-woad.vercel.app/", // <-- replace with your portfolio link
+    github: "https://github.com/ogbuifesinachi21-ch/portfolio",
+    featured: true,
   }
 ];
 
@@ -28,7 +38,7 @@ function Projects() {
         </div>
 
         {/* PROJECT CARD */}
-        <div className="max-w-2xl mx-auto">
+        <div className=" grid md:grid-cols-2 gap-8">
           {projects.map((project, i) => (
             <div 
               key={i} 
