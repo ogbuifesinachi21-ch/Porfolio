@@ -107,7 +107,7 @@ Message: ${formData.message}`;
             onChange={handleChange}
             placeholder="Your Email"
             required
-            className="w-full bg-gray-50 border-gray-300 text-gray-900 rounded-lg p-3 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 outline-none placeholder:text-gray-500"
+            className="w-full bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-3 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 outline-none placeholder:text-gray-500"
           />
           <textarea
             name="message"
